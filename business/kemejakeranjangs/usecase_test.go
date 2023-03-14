@@ -3,16 +3,17 @@ package kemejakeranjangs_test
 import (
 	"context"
 	"errors"
-	"kemejaku/business/kemejakeranjangs"
-	"kemejaku/business/kemejakeranjangs/mocks"
 	"testing"
 	"time"
+
+	"github.com/afrizal423/my-shirt/business/kemejakeranjangs"
+	"github.com/afrizal423/my-shirt/business/kemejakeranjangs/mocks"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )
 
-//buat mock yang seolah-olah interface dari database
+// buat mock yang seolah-olah interface dari database
 var kemejaKeranjangRepoInterfaceMock mocks.KemejaKeranjangRepoInterface
 var kemejaKeranjangUseCaseInterface kemejakeranjangs.KemejaKeranjangUseCaseInterface
 var kemejaKeranjangDataDummy, kemejaKeranjangDataDummyEdit kemejakeranjangs.KemejaKeranjang

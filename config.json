@@ -1,0 +1,20 @@
+{
+    "debug": true,
+    "database": {
+        "user": "root",
+        "pass": "afrizal",
+        "host": "localhost",
+        "port": "3306",
+        "name": "go_kemeja"
+    },
+    "jwt": {
+        "secret": "rahasia",
+        "expired": 15
+    },
+    "context": {
+        "timeout": 60
+    },
+    "server": {
+        "address": ":8000"
+    }
+}

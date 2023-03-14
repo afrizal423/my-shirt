@@ -1,6 +1,6 @@
 package request
 
-import "kemejaku/business/kemejas"
+import "github.com/afrizal423/my-shirt/business/kemejas"
 
 type Kemeja struct {
 	Nama      string `json:"nama"`

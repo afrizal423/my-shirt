@@ -3,12 +3,13 @@ package users
 import (
 	"context"
 	"errors"
-	_middleware "kemejaku/app/middleware"
-	"kemejaku/helpers"
 	"time"
+
+	_middleware "github.com/afrizal423/my-shirt/app/middleware"
+	"github.com/afrizal423/my-shirt/helpers"
 )
 
-//buat struct supaya bisa pake interface biar bisa dipasangkan dengan yang lainnya
+// buat struct supaya bisa pake interface biar bisa dipasangkan dengan yang lainnya
 type UserUseCase struct {
 	// interface repo
 	repo UserRepoInterface
@@ -19,7 +20,7 @@ type UserUseCase struct {
 	//repo lain dipasangkan di main lewat interface
 }
 
-//generate usecase baru configJwt *_middleware.ConfigJWT
+// generate usecase baru configJwt *_middleware.ConfigJWT
 func NewUseCase(userRepo UserRepoInterface, contextTimeout time.Duration, configJwt *_middleware.ConfigJWT) UserUseCaseInterface {
 	return &UserUseCase{
 		repo: userRepo,
@@ -28,7 +29,7 @@ func NewUseCase(userRepo UserRepoInterface, contextTimeout time.Duration, config
 	}
 }
 
-//fungsi harus menempel pada struct
+// fungsi harus menempel pada struct
 func (userUseCase *UserUseCase) Login(user User, ctx context.Context) (User, error) {
 	if user.Email == "" {
 		return User{}, errors.New("Email empty")

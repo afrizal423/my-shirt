@@ -1,9 +1,10 @@
 package keranjangs
 
 import (
-	"kemejaku/business/keranjangs"
-	"kemejaku/drivers/databases/kemejakeranjangs"
 	"time"
+
+	"github.com/afrizal423/my-shirt/business/keranjangs"
+	"github.com/afrizal423/my-shirt/drivers/databases/kemejakeranjangs"
 
 	"gorm.io/gorm"
 )

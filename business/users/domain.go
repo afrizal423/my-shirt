@@ -2,13 +2,14 @@ package users
 
 import (
 	"context"
-	"kemejaku/business/keranjangs"
 	"time"
+
+	"github.com/afrizal423/my-shirt/business/keranjangs"
 
 	"gorm.io/gorm"
 )
 
-//stuct untuk keluar masuk usecase
+// stuct untuk keluar masuk usecase
 type User struct {
 	Id          int
 	Name        string
@@ -25,7 +26,7 @@ type User struct {
 	Token       string
 }
 
-//ini interface antara controller dan usecase
+// ini interface antara controller dan usecase
 type UserUseCaseInterface interface {
 	//perlu konteks biar ada timeout
 	Login(user User, ctx context.Context) (User, error)
@@ -36,7 +37,7 @@ type UserUseCaseInterface interface {
 	DeleteUser(id int, ctx context.Context) (User, error)
 }
 
-//ini interface antara usecase dan repo
+// ini interface antara usecase dan repo
 type UserRepoInterface interface {
 	Login(user User, ctx context.Context) (User, error)
 	GetAllUsers(ctx context.Context) ([]User, error)

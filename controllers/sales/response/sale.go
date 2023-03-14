@@ -1,9 +1,10 @@
 package response
 
 import (
-	"kemejaku/business/kemejas"
-	"kemejaku/business/sales"
 	"time"
+
+	"github.com/afrizal423/my-shirt/business/kemejas"
+	"github.com/afrizal423/my-shirt/business/sales"
 
 	"gorm.io/gorm"
 )

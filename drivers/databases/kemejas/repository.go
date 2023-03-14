@@ -2,7 +2,8 @@ package kemejas
 
 import (
 	"context"
-	"kemejaku/business/kemejas"
+
+	"github.com/afrizal423/my-shirt/business/kemejas"
 
 	"gorm.io/gorm"
 )

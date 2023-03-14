@@ -1,8 +1,9 @@
 package request
 
 import (
-	"kemejaku/business/sales"
 	"time"
+
+	"github.com/afrizal423/my-shirt/business/sales"
 )
 
 type Sale struct {

@@ -1,32 +1,33 @@
 package main
 
 import (
-	"kemejaku/app/routes"
+	"github.com/afrizal423/my-shirt/app/routes"
 
-	userUsecase "kemejaku/business/users"
-	userController "kemejaku/controllers/users"
-	userRepo "kemejaku/drivers/databases/users"
+	userUsecase "github.com/afrizal423/my-shirt/business/users"
+	userController "github.com/afrizal423/my-shirt/controllers/users"
+	userRepo "github.com/afrizal423/my-shirt/drivers/databases/users"
 
-	keranjangUsecase "kemejaku/business/keranjangs"
-	keranjangController "kemejaku/controllers/keranjangs"
-	keranjangRepo "kemejaku/drivers/databases/keranjangs"
+	keranjangUsecase "github.com/afrizal423/my-shirt/business/keranjangs"
+	keranjangController "github.com/afrizal423/my-shirt/controllers/keranjangs"
+	keranjangRepo "github.com/afrizal423/my-shirt/drivers/databases/keranjangs"
 
-	kemejaKeranjangUsecase "kemejaku/business/kemejakeranjangs"
-	kemejaKeranjangController "kemejaku/controllers/kemejakeranjangs"
-	kemejaKeranjangRepo "kemejaku/drivers/databases/kemejakeranjangs"
+	kemejaKeranjangUsecase "github.com/afrizal423/my-shirt/business/kemejakeranjangs"
+	kemejaKeranjangController "github.com/afrizal423/my-shirt/controllers/kemejakeranjangs"
+	kemejaKeranjangRepo "github.com/afrizal423/my-shirt/drivers/databases/kemejakeranjangs"
 
-	kemejaUsecase "kemejaku/business/kemejas"
-	kemejaController "kemejaku/controllers/kemejas"
-	kemejaRepo "kemejaku/drivers/databases/kemejas"
+	kemejaUsecase "github.com/afrizal423/my-shirt/business/kemejas"
+	kemejaController "github.com/afrizal423/my-shirt/controllers/kemejas"
+	kemejaRepo "github.com/afrizal423/my-shirt/drivers/databases/kemejas"
 
-	saleUsecase "kemejaku/business/sales"
-	saleController "kemejaku/controllers/sales"
-	saleRepo "kemejaku/drivers/databases/sales"
+	saleUsecase "github.com/afrizal423/my-shirt/business/sales"
+	saleController "github.com/afrizal423/my-shirt/controllers/sales"
+	saleRepo "github.com/afrizal423/my-shirt/drivers/databases/sales"
 
-	_middleware "kemejaku/app/middleware"
-	"kemejaku/drivers/databases/mysql"
 	"log"
 	"time"
+
+	_middleware "github.com/afrizal423/my-shirt/app/middleware"
+	"github.com/afrizal423/my-shirt/drivers/databases/mysql"
 
 	"github.com/labstack/echo/v4"
 	"github.com/spf13/viper"

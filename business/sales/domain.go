@@ -2,13 +2,14 @@ package sales
 
 import (
 	"context"
-	"kemejaku/business/kemejas"
 	"time"
+
+	"github.com/afrizal423/my-shirt/business/kemejas"
 
 	"gorm.io/gorm"
 )
 
-//stuct untuk keluar masuk usecase
+// stuct untuk keluar masuk usecase
 type Sale struct {
 	Id               int
 	Percent          float64
@@ -21,7 +22,7 @@ type Sale struct {
 	DeletedAt        gorm.DeletedAt
 }
 
-//ini interface antara controller dan usecase
+// ini interface antara controller dan usecase
 type SaleUseCaseInterface interface {
 	//perlu konteks biar ada timeout
 	InsertSale(sale Sale, ctx context.Context) (Sale, error)
@@ -31,7 +32,7 @@ type SaleUseCaseInterface interface {
 	DeleteSale(id int, ctx context.Context) (Sale, error)
 }
 
-//ini interface antara usecase dan repo
+// ini interface antara usecase dan repo
 type SaleRepoInterface interface {
 	InsertSale(sale Sale, ctx context.Context) (Sale, error)
 	GetAllSale(ctx context.Context) ([]Sale, error)

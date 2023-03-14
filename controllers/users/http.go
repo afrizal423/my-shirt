@@ -1,13 +1,14 @@
 package controllers
 
 import (
-	"kemejaku/app/middleware"
-	"kemejaku/business/users"
-	"kemejaku/controllers"
-	"kemejaku/controllers/users/request"
-	"kemejaku/controllers/users/response"
 	"net/http"
 	"strconv"
+
+	"github.com/afrizal423/my-shirt/app/middleware"
+	"github.com/afrizal423/my-shirt/business/users"
+	"github.com/afrizal423/my-shirt/controllers"
+	"github.com/afrizal423/my-shirt/controllers/users/request"
+	"github.com/afrizal423/my-shirt/controllers/users/response"
 
 	"github.com/labstack/echo/v4"
 )

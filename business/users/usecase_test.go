@@ -3,18 +3,19 @@ package users_test
 import (
 	"context"
 	"errors"
-	"kemejaku/app/middleware"
-	"kemejaku/business/users"
-	"kemejaku/business/users/mocks"
 	"testing"
 	"time"
+
+	"github.com/afrizal423/my-shirt/app/middleware"
+	"github.com/afrizal423/my-shirt/business/users"
+	"github.com/afrizal423/my-shirt/business/users/mocks"
 
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )
 
-//buat mock yang seolah-olah interface dari database
+// buat mock yang seolah-olah interface dari database
 var userRepoInterfaceMock mocks.UserRepoInterface
 var userUseCaseInterface users.UserUseCaseInterface
 var userDataDummyLogin, userDataDummyEdit users.User

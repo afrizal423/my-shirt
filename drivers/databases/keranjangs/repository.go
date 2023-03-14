@@ -2,7 +2,8 @@ package keranjangs
 
 import (
 	"context"
-	"kemejaku/business/keranjangs"
+
+	"github.com/afrizal423/my-shirt/business/keranjangs"
 
 	"gorm.io/gorm"
 )

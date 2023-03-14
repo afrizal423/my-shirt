@@ -3,16 +3,17 @@ package sales_test
 import (
 	"context"
 	"errors"
-	"kemejaku/business/sales"
-	"kemejaku/business/sales/mocks"
 	"testing"
 	"time"
+
+	"github.com/afrizal423/my-shirt/business/sales"
+	"github.com/afrizal423/my-shirt/business/sales/mocks"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )
 
-//buat mock yang seolah-olah interface dari database
+// buat mock yang seolah-olah interface dari database
 var saleRepoInterfaceMock mocks.SaleRepoInterface
 var saleUsecaseInterface sales.SaleUseCaseInterface
 var saleDataDummy sales.Sale

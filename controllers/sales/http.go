@@ -1,12 +1,13 @@
 package sales
 
 import (
-	"kemejaku/business/sales"
-	"kemejaku/controllers"
-	"kemejaku/controllers/sales/request"
-	"kemejaku/controllers/sales/response"
 	"net/http"
 	"strconv"
+
+	"github.com/afrizal423/my-shirt/business/sales"
+	"github.com/afrizal423/my-shirt/controllers"
+	"github.com/afrizal423/my-shirt/controllers/sales/request"
+	"github.com/afrizal423/my-shirt/controllers/sales/response"
 
 	"github.com/labstack/echo/v4"
 )

@@ -2,7 +2,8 @@ package sales
 
 import (
 	"context"
-	"kemejaku/business/sales"
+
+	"github.com/afrizal423/my-shirt/business/sales"
 
 	"gorm.io/gorm"
 )

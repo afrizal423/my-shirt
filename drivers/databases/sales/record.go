@@ -1,9 +1,10 @@
 package sales
 
 import (
-	"kemejaku/business/sales"
-	"kemejaku/drivers/databases/kemejas"
 	"time"
+
+	"github.com/afrizal423/my-shirt/business/sales"
+	"github.com/afrizal423/my-shirt/drivers/databases/kemejas"
 
 	"gorm.io/gorm"
 )

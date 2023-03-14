@@ -1,12 +1,13 @@
 package controllers
 
 import (
-	"kemejaku/business/keranjangs"
-	"kemejaku/controllers"
-	"kemejaku/controllers/keranjangs/request"
-	"kemejaku/controllers/keranjangs/response"
 	"net/http"
 	"strconv"
+
+	"github.com/afrizal423/my-shirt/business/keranjangs"
+	"github.com/afrizal423/my-shirt/controllers"
+	"github.com/afrizal423/my-shirt/controllers/keranjangs/request"
+	"github.com/afrizal423/my-shirt/controllers/keranjangs/response"
 
 	"github.com/labstack/echo/v4"
 )

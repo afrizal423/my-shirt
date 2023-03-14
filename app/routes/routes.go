@@ -1,13 +1,13 @@
 package routes
 
 import (
-	kemejaKeranjangController "kemejaku/controllers/kemejakeranjangs"
-	kemejaController "kemejaku/controllers/kemejas"
-	keranjangController "kemejaku/controllers/keranjangs"
-	saleController "kemejaku/controllers/sales"
-	userController "kemejaku/controllers/users"
+	kemejaKeranjangController "github.com/afrizal423/my-shirt/controllers/kemejakeranjangs"
+	kemejaController "github.com/afrizal423/my-shirt/controllers/kemejas"
+	keranjangController "github.com/afrizal423/my-shirt/controllers/keranjangs"
+	saleController "github.com/afrizal423/my-shirt/controllers/sales"
+	userController "github.com/afrizal423/my-shirt/controllers/users"
 
-	_middleware "kemejaku/app/middleware"
+	_middleware "github.com/afrizal423/my-shirt/app/middleware"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"

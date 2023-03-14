@@ -3,7 +3,8 @@ package users
 import (
 	"context"
 	"errors"
-	"kemejaku/business/users"
+
+	"github.com/afrizal423/my-shirt/business/users"
 
 	"gorm.io/gorm"
 )
@@ -93,7 +94,7 @@ func (repo *UserRepository) EditUser(user users.User, id int, ctx context.Contex
 	return newUser.ToUsecase(), nil
 }
 
-//Deletenya cuma ngubah deleted at
+// Deletenya cuma ngubah deleted at
 func (repo *UserRepository) DeleteUser(id int, ctx context.Context) (users.User, error) {
 	var userDb User
 

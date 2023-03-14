@@ -1,6 +1,6 @@
 package request
 
-import "kemejaku/business/keranjangs"
+import "github.com/afrizal423/my-shirt/business/keranjangs"
 
 type KeranjangInsert struct {
 	IdUser int `json:"idUser"`

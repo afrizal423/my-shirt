@@ -1,6 +1,6 @@
 package request
 
-import "kemejaku/business/users"
+import "github.com/afrizal423/my-shirt/business/users"
 
 type UserLogin struct {
 	Email    string `json:"email"`

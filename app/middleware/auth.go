@@ -1,9 +1,10 @@
 package middleware
 
 import (
-	"kemejaku/controllers"
 	"net/http"
 	"time"
+
+	"github.com/afrizal423/my-shirt/controllers"
 
 	"github.com/golang-jwt/jwt"
 	"github.com/labstack/echo/v4"

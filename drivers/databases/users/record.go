@@ -1,9 +1,10 @@
 package users
 
 import (
-	"kemejaku/business/users"
-	"kemejaku/drivers/databases/keranjangs"
 	"time"
+
+	"github.com/afrizal423/my-shirt/business/users"
+	"github.com/afrizal423/my-shirt/drivers/databases/keranjangs"
 
 	"gorm.io/gorm"
 )

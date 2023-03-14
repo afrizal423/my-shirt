@@ -4,7 +4,7 @@ package mocks
 
 import (
 	context "context"
-	keranjangs "kemejaku/business/keranjangs"
+	keranjangs "github.com/afrizal423/my-shirt/business/keranjangs"
 
 	mock "github.com/stretchr/testify/mock"
 )
